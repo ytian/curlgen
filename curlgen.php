@@ -58,7 +58,6 @@ class CurlGen {
         $codes[] = sprintf('$url = "%s";', $url);
         $codes[] = '$ch = curl_init();';
         $codes[] = 'curl_setopt($ch, CURLOPT_HEADER, true);';
-        $codes[] = 'curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);';
         $codes[] = 'curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);';  
         $codes[] = 'curl_setopt($ch, CURLOPT_URL, $url);';
         if ($conf['method'] == 'POST') {
